@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Electric Car Store</title>
+<<<<<<< HEAD
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -20,10 +21,50 @@
           <li><a href="#">Catálogo</a></li>
           <li><a href="#">Ofertas</a></li>
           <li><a href="#">Contacto</a></li>
+=======
+  <!-- Vincular CSS -->
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <!-- Font Awesome para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Klavika:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Carrito Fijo -->
+  <div id="cart-popup" class="cart-popup">
+    <i class="fas fa-shopping-cart"></i> <!-- Ícono del carrito -->
+    <span>Total a pagar:</span>
+    <span class="cart-total">$0</span>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="assets/IMG/logo.png" alt="Logo">
+      </div>
+      <button class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/IMG/logo.png" alt="Logo">
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#bicicletas">Bicicletas</a></li>
+          <li><a href="#automoviles">Automóviles</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+>>>>>>> 6b3af21 (Primer commit)
         </ul>
       </nav>
     </aside>
 
+<<<<<<< HEAD
     <!-- Contenido principal -->
     <div class="main-content">
       <header class="header">
@@ -72,5 +113,77 @@
   </footer>
 
   <script src="JS/scripts.js"></script>
+=======
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Inicio -->
+      <div class="gallery">
+        <div class="gallery-images">
+          <img src="assets/IMG/1.png" alt="Imagen 1">
+          <img src="assets/IMG/2.png" alt="Imagen 2">
+        </div>
+      </div>
+
+      <!-- Bicicletas -->
+      <section id="bicicletas" class="section">
+        <h1 class="title">Bicicletas</h1>
+        <div class="products">
+          <!-- Bicicleta 1 -->
+          <div class="product" id="product-1">
+            <img src="assets/IMG/bici 1.png" alt="Bicicleta 1">
+            <p>Modelo: Bicicleta 1</p>
+            <p>Precio base: <span class="base-price" data-price="100000">$100000</span></p>
+            <div class="quantity-controls">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
+          </div>
+          <!-- Bicicleta 2 -->
+          <div class="product" id="product-2">
+            <img src="assets/IMG/bici 2.png" alt="Bicicleta 2">
+            <p>Modelo: Bicicleta 2</p>
+            <p>Precio base: <span class="base-price" data-price="120000">$120000</span></p>
+            <div class="quantity-controls">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
+          </div>
+          <!-- Bicicleta 3 -->
+          <div class="product" id="product-3">
+            <img src="assets/IMG/bici 3.png" alt="Bicicleta 3">
+            <p>Modelo: Bicicleta 3</p>
+            <p>Precio base: <span class="base-price" data-price="150000">$150000</span></p>
+            <div class="quantity-controls">
+              <button class="decrement">-</button>
+              <span class="quantity">0</span>
+              <button class="increment">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="section">
+        <h1 class="title">Contacto</h1>
+        <form class="contact-form">
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu correo" required>
+          <textarea placeholder="Escribe tu mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Todos los derechos reservados &copy; 2024</p>
+  </footer>
+
+  <!-- Vincular JavaScript -->
+  <script src="assets/JS/scripts.js"></script>
+>>>>>>> 6b3af21 (Primer commit)
 </body>
 </html>
